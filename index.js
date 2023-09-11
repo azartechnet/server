@@ -1,5 +1,5 @@
 const express=require('express');
-const mongoose=require('mongoose');
+//const mongoose=require('mongoose');
 const cors=require('cors');
 const app=express();
 app.use(express.json());
@@ -8,7 +8,7 @@ app.use(cors());
 const FoodModel=require("./models/Food");
 
 
-mongoose.connect("mongodb://127.0.0.1:27017/food");
+//mongoose.connect("mongodb://127.0.0.1:27017/food");
 
 app.post("/insert",async(req,res)=>{
 
